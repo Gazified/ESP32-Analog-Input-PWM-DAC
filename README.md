@@ -106,11 +106,11 @@ void loop() {
 
 | Position | Raw used for prediction (from Task 1) | Predicted duty | Predicted percent | Observed duty | LED brightness |
 |---|---|---|---|---|---|
-| Min | 0 | 0 | 0% | 0 | (add observation) |
-| 1/4 | 1023 | 63 | 24.7% | 63 | (add observation) |
-| 1/2 | 2047 | 127 | 49.8% | 127 | (add observation) |
-| 3/4 | 3071 | 191 | 74.9% | 191 | (add observation) |
-| Max | 4095 | 255 | 100% | 255 | (add observation) |
+| Min | 0 | 0 | 0% | 0 | Off |
+| 1/4 | 1023 | 63 | 24.7% | 63 | Dim |
+| 1/2 | 2047 | 127 | 49.8% | 127 | Medium |
+| 3/4 | 3071 | 191 | 74.9% | 191 | Bright |
+| Max | 4095 | 255 | 100% | 255 | Full Bright |
 
 The observed duty matched the predicted duty at all five positions. This confirms that the sketch scales the raw reading as predicted. The brightness of an LED does not change in direct proportion to the duty value, so the brightness at the middle positions should not be expected to look like exactly 25 percent or 50 percent.
 
